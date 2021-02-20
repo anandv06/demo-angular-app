@@ -26,6 +26,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
+    singleRun: false,
     browsers: ['HeadlessChromium'],
     customLaunchers: {
       HeadlessChromium: {
@@ -42,7 +43,6 @@ module.exports = function (config) {
           '--proxy-server=\'direct://\''
        ]
       }
-    }
-    singleRun: false
+    }  
   });
 };
