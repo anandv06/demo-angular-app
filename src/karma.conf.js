@@ -27,21 +27,15 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     singleRun: false,
-    browsers: ['HeadlessChromium'],
-    customLaunchers: {
-      HeadlessChromium: {
-        base: 'ChromiumHeadless',
-        flags: [
-          '--no-sandbox',
-          '--remote-debugging-port=9222',
-          '--enable-logging',
-          '--user-data-dir=./karma-chrome',
-          '--v=1',
-          '--disable-background-timer-throttling',
-          '--disable-renderer-backgrounding',
-          '--proxy-bypass-list=*',
-          '--proxy-server=\'direct://\''
-       ]
+    browsers: ['Chrome'],
+    browserDisconnectTimeout: 10000,
+    browserDisconnectTolerance: 3,
+    browserNoActivityTimeout: 60000,
+    flags: [
+      '--disable-web-security',
+      '--disable-gpu',
+      '--no-sandbox'
+    ]
       }
     }  
   });
