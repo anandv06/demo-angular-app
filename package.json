@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.json --quiet --chrome-flags='--headless' https://google.com"
+    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.json --chrome-flags='--headless' https://google.com"
   },
   "private": true,
   "dependencies": {
