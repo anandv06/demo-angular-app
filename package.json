@@ -2,9 +2,12 @@
   "name": "angular-app",
   "version": "0.0.0",
   "scripts": {
-  "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js \
-  --output-path=./lighthouse-report.html --quiet \
-  --chrome-flags='--headless' https://kitconcept.com"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
