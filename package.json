@@ -8,9 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js \
-  --output-path=./lighthouse-report.html --quiet \
-  --chrome-flags='--headless' https://kitconcept.com"
+    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://kitconcept.com"
   },
   "private": true,
   "dependencies": {
