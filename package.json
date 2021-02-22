@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output json --output-path=./lighthouse-report.json --view --chrome-flags='--headless' http://18.219.167.18:80"
+    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output json --output-path=./lighthouse-report.json --view --chrome-flags='--headless' http://localhost:80"
   },
   "private": true,
   "dependencies": {
