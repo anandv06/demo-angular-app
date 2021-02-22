@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless"
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output json --output-path=./lighthouse-report.json --view --chrome-flags='--headless' http://localhost:80"
